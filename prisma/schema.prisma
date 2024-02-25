@@ -7,13 +7,12 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
-
 model Pets{
   id Int @id @default(autoincrement())
   nome String 
   animal String 
   dono String
   raca String
-  telefone Float
-  nascimento DateTime 
+  telefone String
+  nascimento String 
 }

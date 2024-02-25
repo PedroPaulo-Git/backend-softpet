@@ -6,6 +6,6 @@ export class Pet {
   animal: string; 
   dono: string;
   raca: string; 
-  telefone: number; 
-  nascimento: Date; 
+  telefone: string; 
+  nascimento: string; 
 }

@@ -27,7 +27,7 @@ export class PetServices {
       data,
     });
   }
-  async editPet(id:number, data:Pet):Promise<Pet> {
+  async editPet(id:string, data:Pet):Promise<Pet> {
     return this.prisma.pets.update({
       where:{id:Number(id)},
       data:{ 

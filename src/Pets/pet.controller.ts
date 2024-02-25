@@ -25,7 +25,7 @@ export class PetController {
   }
 
   @Put(':id')
-  async editPet(@Param('id') id: number, @Body() postData:Pet): Promise<Pet> {
+  async editPet(@Param('id') id: string, @Body() postData:Pet): Promise<Pet> {
     return this.petservices.editPet(id,postData);
   }
 
